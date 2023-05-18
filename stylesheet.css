@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fffff5;
+  position: relative;
+}
+
+.container1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.round-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+
+h1 {
+  color: #333;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+}
+
+.cta-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+}
+
+.cta-buttons .cta-button {
+  display: inline-block;
+  background-color: #fffff2;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.cta-buttons .cta-button:hover {
+  background-color: #33adff;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#projects {
+  position: center;
+}
+
+.project-block {
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+}
+
+.project-block img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
