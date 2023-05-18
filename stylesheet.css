@@ -17,8 +17,17 @@ body {
 .container2 {
   display: flex;
   justify-content: center;
+  left: 25%;
   align-items: center;
   height: 100vh;
+}
+.container2 #info {
+  display: flex;
+  position: absolute;
+  top: 45%;
+  right: 15%;
+  width: 25%;
+  height: 50%;
 }
 
 .round-image {
@@ -60,7 +69,7 @@ h1 {
 }
 
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -83,13 +92,20 @@ h1 {
 }
 
 #projects {
-  position: center;
+  display: flex;
+  justify-content: center;
+  left: 25%;
+  align-items: center;
+  height: 100vh;
+
 }
 
 .project-block {
+  align-items: center;
   display: inline-block;
   position: relative;
   margin: 20px;
+  
 }
 
 .project-block img {
