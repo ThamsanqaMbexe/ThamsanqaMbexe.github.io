@@ -8,6 +8,11 @@ body {
   position: relative;
 }
 
+@font-face {
+  font-family: Roboto Slab;
+  src: url(robotoslab/RobotoSlab[wght].ttf);
+}
+
 .container1 {
   max-width: 800px;
   margin: 0 auto;
@@ -19,9 +24,11 @@ body {
   justify-content: center;
   left: 25%;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+  width: 80%;
 }
 .container2 #info {
+  font-family: Roboto Slab;
   display: flex;
   position: absolute;
   top: 45%;
@@ -31,21 +38,27 @@ body {
 }
 
 .round-image {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  border-radius: 25%;
+  width: 300px;
+  height: 300px;
 }
 
 
 h1 {
-  color: #333;
+  font-family: Roboto Slab;
+  color: hwb(27 1% 45%);
   position: absolute;
   top: 20px;
   left: 20px;
   margin: 0;
 }
 
+p {
+  color: chocolate;
+}
+
 .cta-buttons {
+  font-family: Roboto Slab;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -69,13 +82,14 @@ h1 {
 }
 
 .footer {
+  font-family: Roboto Slab;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: #333;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -106,6 +120,10 @@ h1 {
   position: relative;
   margin: 20px;
   
+}
+
+.project-block h1 {
+  margin: 0% auto;
 }
 
 .project-block img {
