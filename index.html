@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./src/stylesheet.css">
+    <link rel="stylesheet" href="./src/stylesheet.css" />
   </head>
   <body>
     <section class="container1">
       <header>Welcome to My Portfolio</header>
+
+      <button id="menu-button" class="menu-button">Menu</button>
       <div class="cta-buttons">
         <a class="cta-button" href="index.html">Home</a>
         <a class="cta-button" href="./src/skills.html">Skills</a>
         <a class="cta-button" href="./src/projects.html">Projects</a>
-        <a class="cta-button" href="https://docs.google.com/document/d/1KCMM3ZdgIz-LBGa0tuENB_8YkDH_QrY0nj_ZzepNDbg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+        <a
+          class="cta-button"
+          href="https://docs.google.com/document/d/1KCMM3ZdgIz-LBGa0tuENB_8YkDH_QrY0nj_ZzepNDbg/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CV</a
+        >
       </div>
     </section>
 
     <div class="container2">
       <h1>Thamsanqa Mbexe</h1>
-      <img class="round-image" src="images/portrait.jpeg" alt="Round Image">
+      <img class="round-image" src="images/portrait.jpeg" alt="Round Image" />
       <div id="info">
-        <p>"I want to tell you a little bit about myself. I love going to the gym. In my spare time, I play video games. My programming skills are constantly growing, and I'm thrilled to present a showcase of my skill level, growth, and highlight some of my projects. In April 2023, I joined Umuzi full-stack web development as a recruit. I am dedicated to honing my abilities and delivering exceptional results to the best of my abilities. This portfolio will serve as a testament to my passion and commitment to excellence."
+        <p>
+          "I want to tell you a little bit about myself. I love going to the
+          gym. In my spare time, I play video games. My programming skills are
+          constantly growing, and I'm thrilled to present a showcase of my skill
+          level, growth, and highlight some of my projects. In April 2023, I
+          joined Umuzi full-stack web development as a recruit. I am dedicated
+          to honing my abilities and delivering exceptional results to the best
+          of my abilities. This portfolio will serve as a testament to my
+          passion and commitment to excellence."
         </p>
       </div>
     </div>
-    
+
     <div class="footer">
       <p>connect with me on my socials:</p>
       <div class="social-icons">
-        <a href="https://www.instagram.com/billions_mero/?hl=af" target="_blank" rel="noopener noreferrer"><img class="fab fa-instagram" src="images/instagram.png" width="25" height="25"></a>
-        <a href="https://www.linkedin.com/in/thamsanqa-mbexe-a44ba820b/?originalSubdomain=za" target="_blank" rel="noopener noreferrer"><img class="fab fa-linkedin" src="images/linkedin.png" width="25" height="25"></a>
-        <a href="https://github.com/ThamsanqaMbexe" target="_blank" rel="noopener noreferrer"><img class="far fa-envelope" src="images/github.png" width="25" height="25"></a>
-        <a href="mailto:thamsanqa.mbexe@umuzi.org" target="_blank" rel="noopener noreferrer"><img class="far fa-envelope" src="images/gmail.png" width="25" height="25"></a>
+        <a
+          href="https://www.instagram.com/billions_mero/?hl=af"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="fab fa-instagram"
+            src="images/instagram.png"
+            width="25"
+            height="25"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/thamsanqa-mbexe-a44ba820b/?originalSubdomain=za"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="fab fa-linkedin"
+            src="images/linkedin.png"
+            width="25"
+            height="25"
+        /></a>
+        <a
+          href="https://github.com/ThamsanqaMbexe"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="far fa-envelope"
+            src="images/github.png"
+            width="25"
+            height="25"
+        /></a>
+        <a
+          href="mailto:thamsanqa.mbexe@umuzi.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            class="far fa-envelope"
+            src="images/gmail.png"
+            width="25"
+            height="25"
+        /></a>
       </div>
     </div>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuButton = document.getElementById("menu-button");
+        const ctaButtons = document.querySelector(".cta-buttons");
+
+        menuButton.addEventListener("click", () => {
+          ctaButtons.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
 </html>
-
-

@@ -82,6 +82,24 @@ p {
   background-color: #33adff;
 }
 
+.menu-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .cta-buttons {
+    display: none;
+  }
+  
+  .menu-button {
+    display: block;
+  }
+}
+
+
 .footer {
   font-family: Roboto Slab;
   position: absolute;
