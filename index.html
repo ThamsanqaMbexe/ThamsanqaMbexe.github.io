@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./src/stylesheet.css" />
-  </head>
-  <body>
-    <section class="container1">
-      <header>Welcome to My Portfolio</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./src/stylesheet.css">
+</head>
+<body>
+  <header>Welcome to My Portfolio</header>
 
-      <button id="menu-button" class="menu-button">
-        <span class="menu-icon">
-          <span>Home</span>
-          <span>Skills</span>
-          <span>Projects</span>
-        </span>
-      </button>
-      
-    </section>
+  <button id="menu-button" class="menu-button">
+    <span class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
 
+  <nav class="menu">
+    <a class="menu-link" href="#">Home</a>
+    <a class="menu-link" href="#">Skills</a>
+    <a class="menu-link" href="#">Projects</a>
+    <a class="menu-link" href="#">CV</a>
+  </nav>
+
+  <main>
     <div class="container2">
       <h1>Thamsanqa Mbexe</h1>
-      <img class="round-image" src="images/portrait.jpeg" alt="Round Image" />
+      <img class="round-image" src="images/portrait.jpeg" alt="Round Image">
       <div id="info">
         <p>
           "I want to tell you a little bit about myself. I love going to the
@@ -36,61 +41,18 @@
         </p>
       </div>
     </div>
+  </main>
 
-    <div class="footer">
-      <p>connect with me on my socials:</p>
-      <div class="social-icons">
-        <a
-          href="https://www.instagram.com/billions_mero/?hl=af"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="fab fa-instagram"
-            src="images/instagram.png"
-            width="25"
-            height="25"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/thamsanqa-mbexe-a44ba820b/?originalSubdomain=za"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="fab fa-linkedin"
-            src="images/linkedin.png"
-            width="25"
-            height="25"
-        /></a>
-        <a
-          href="https://github.com/ThamsanqaMbexe"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="far fa-envelope"
-            src="images/github.png"
-            width="25"
-            height="25"
-        /></a>
-        <a
-          href="mailto:thamsanqa.mbexe@umuzi.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            class="far fa-envelope"
-            src="images/gmail.png"
-            width="25"
-            height="25"
-        /></a>
-      </div>
+  <footer>
+    <p>connect with me on my socials:</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/billions_mero/?hl=af" target="_blank" rel="noopener noreferrer"><img class="fab fa-instagram" src="images/instagram.png" width="25" height="25"></a>
+      <a href="https://www.linkedin.com/in/thamsanqa-mbexe-a44ba820b/?originalSubdomain=za" target="_blank" rel="noopener noreferrer"><img class="fab fa-linkedin" src="images/linkedin.png" width="25" height="25"></a>
+      <a href="https://github.com/ThamsanqaMbexe" target="_blank" rel="noopener noreferrer"><img class="far fa-envelope" src="images/github.png" width="25" height="25"></a>
+      <a href="mailto:thamsanqa.mbexe@umuzi.org" target="_blank" rel="noopener noreferrer"><img class="far fa-envelope" src="images/gmail.png" width="25" height="25"></a>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuButton = document.getElementById("menu-button");
-        const ctaButtons = document.querySelector(".cta-buttons");
+  </footer>
 
-        menuButton.addEventListener("click", () => {
-          ctaButtons.classList.toggle("show");
-        });
-      });
-    </script>
-  </body>
+  <script src="./src/script.js"></script>
+</body>
 </html>
