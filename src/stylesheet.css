@@ -61,9 +61,12 @@ header {
 }
 
 .container2 {
-  display: grid;
+  display: grid; 
   place-items: center;
   height: 90vh;
+  width: 80%;
+  margin: 0 auto; 
+  grid-column-start: 2; 
 }
 
 .round-image {
@@ -78,11 +81,22 @@ h1 {
   margin: 0;
 }
 
+#info {
+  font-family: Roboto Slab;
+  display: grid;
+  place-items: center;
+  width: 25%;
+  height: 50%;
+  position: absolute;
+  top: 35%;
+  right: 22%;
+}
+
 p {
   font-family: Roboto Slab;
   color: chocolate;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -95,7 +109,6 @@ footer {
   width: 100%;
   background-color: #333;
   color: #fff;
-  padding: 10px;
   text-align: center;
 }
 
@@ -131,5 +144,16 @@ footer .social-icons a {
 
   .menu-link {
     margin-top: 5px;
+  }
+
+  .container2 {
+    width: 100%; /* Update width for better responsiveness */
+    left: 0;
+  }
+
+  .round-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
   }
 }
