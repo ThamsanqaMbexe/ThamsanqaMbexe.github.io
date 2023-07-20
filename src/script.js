@@ -1,10 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menu-button");
-    const menu = document.querySelector(".menu");
-  
-    menuButton.addEventListener("click", () => {
-      menuButton.classList.toggle("active");
-      menu.classList.toggle("active");
-    });
-  });
+function toggleMenu() {
+  const menu = document.getElementById("dropdown-menu");
+  menu.classList.toggle("active");
+}
+
   
