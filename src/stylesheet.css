@@ -137,6 +137,7 @@ h1 {
 
 .projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 90vh;
@@ -244,6 +245,10 @@ h1 {
     margin-bottom: 80px;
   }
 
+  .container h1 {
+    font-size: 24px;
+  }
+
   .info p {
     font-size: 18px;
     color: chocolate;
@@ -265,12 +270,13 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 75vh;
     left: 0;
     right: 0;
   }
 
   .project-block {
-    display: inline-block;
+    flex-basis: calc(50% - 20px);
     align-items: center;
     text-align: center;
     padding: 25px;
